@@ -6,7 +6,7 @@ from src import lzc
 
 
 # This file will load all files in the data directory ending with the .csv
-# extension and same the final values in a vector called lzc_all_csv.
+# extension and save the final values in a vector called lzc_all_csv.
 dataDir = "data/"
 ext_csv = ".csv"
 lz_all_csv = []

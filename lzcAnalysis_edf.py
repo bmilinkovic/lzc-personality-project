@@ -4,8 +4,8 @@ import mne
 import os
 
 
-# This file will load all files in the data directory ending with the .csv
-# extension and same the final values in a vector called lzc_all_csv.
+# This file will load all files in the data directory ending with the .edf
+# extension and save the final values in a vector called lzc_all_edf.
 
 dataDir = "data/"
 ext_edf = ".edf"
