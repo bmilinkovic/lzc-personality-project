@@ -16,3 +16,8 @@ for filename in os.listdir(dataDir):
         file_csv = pd.read_csv(f).to_numpy().T
         LZc_single_subject_csv = lzc.LZc(raw_array)
         lz_all_csv.append(LZc_single_subject_csv)
+
+# Saving variable to a .csv in the results/ directory
+
+saveDir = 'results/'
+np.savetxt(saveDir + "lzc_all_csv.csv", lz_all_csv, delimiter="," )

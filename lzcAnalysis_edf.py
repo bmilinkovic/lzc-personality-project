@@ -19,6 +19,9 @@ for filename in os.listdir(dataDir):
         LZc_single_subject_edf = lzc.LZc(raw_array)
         lz_all_edf.append(LZc_single_subject_edf)
 
+saveDir = 'results/'
+np.savetxt(saveDir + "lzc_all_edf.csv", lz_all_edf, delimiter="," )
+
 
 
 
